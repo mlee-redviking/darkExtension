@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "dark background pages",
+    "description": "makes pages dark",
+    "version": "0.1",
+    "page_action":{
+        "default_icon": "img.png",
+        "default_popup": "popup.html",
+        "default_title": "Making pages dark, as they"
+    }
+}
