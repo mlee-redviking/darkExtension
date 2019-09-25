@@ -4,15 +4,25 @@
     "description": "makes pages dark",
     "version": "0.1",
 
+    "background": {
+        "scripts": ["background.js"]
+      },
+
+   
+
+    "browser_action":{
+
+    "default_title": "Dark Mode",
+    "default_popup": "popup.html"
+    },
+
     "content_scripts":[
         {
             "matches": ["<all_urls>"],
             "css": ["main.css"],
-            "html": ["mainBlack.html"]
+            "html": ["mainBlack.html"],
+            "js":["content.js"]
+            
         }
-    ],
-
-  "browser_action":{
-
-  }
+    ]
 }
